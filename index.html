@@ -19,91 +19,106 @@
 </head>
 <body>
     <div class="container">
-        <img src="/img/cedric.jpg" alt="photo de Cédric">
-        <section>
-            <h1 class="fullname">Cédric CHARLESIA</h1>
-            <h2 class="job">Développeur web et mobile</h2>
-            <p>Certifié développeur web et web mobile en juillet 2022, j'ai trouvé un métier qui me passionne !</p>
-            <p>Je me spécialise dans le développement backend en m'interessant aux enjeux de sécurité et protection des données.</p>
-            <div>
-                <a href="/data/CV Cédric CHARLESIA - Développeur web et mobile.pdf" class="button" target="_blank">Voir mon CV</a>
-                <a href="mailto:contact@cedriccharlesia.com" class="button">M'envoyer un email</a>
+        <div class="content">
+            <div class="profile-picture">
+                <img src="/img/cedric.jpg" alt="photo de Cédric">
             </div>
-        </section>
-
-        <section>
-            <h3 class="title">Compétences</h3>
-            <ul class="skills-list">
-                <li><div>
-                    <span>HTML</span>
-                <div>Langage</div>
+            <section class="content-bloc">
+                <h1 class="fullname">Cédric CHARLESIA</h1>
+                <h2 class="job">Développeur web et mobile</h2>
+                <div class="introduction">
+                    <p>Certifié <span class="bold">développeur web et web mobile</span> en juillet 2022, je me spécialise dans le <span class="bold">développement backend</span> en m'interessant aux enjeux de sécurité et protection des données.</p>
+                    <div class="call-to-action-btn">
+                        <a href="mailto:contact@cedriccharlesia.com" class="button">M'envoyer un email</a>
+                        <span>ou</span> 
+                        <a href="/data/CV Cédric CHARLESIA - Développeur web et mobile.pdf" class="button" target="_blank">Voir mon CV</a> 
+                    </div>
                 </div>
-            </li>
-                <li><div>
-                    <span>CSS</span>
-                <div>Langage</div>
-                </div>
-            </li>
-                <li><div>
-                    <span>JavaScript</span>
-                <div>Langage</div>
-                </div>
-            </li>
-                <li><div>
-                    <span>TypeScript</span>
-                <div>Langage</div>
-                </div>
-            </li>
-                <li><div>
-                    <span>Node.js</span>
-                <div>Runtime</div>
-                </div>
-            </li>
-                <li><div>
-                    <span>Vue.js</span>
-                <div>Framework</div>
-                </div>
-            </li>
-                <li><div>
-                    <span>PostgreSQL</span>
-                <div>Base de données</div>
-                </div>
-            </li>
-                <li><div>
-                    <span>Git</span>
-                <div>Versioning</div>
-                </div>
-            </li>
-            </ul>
-        </section>
-
-        <section>
-            <h3 class="title">Réalisations</h3>
-            <div class="project-card">
-                <div class="card-picture">
-                    <img src="/img/mon-budget.jpg" alt="screenshot Mon Budget">
-                    <span>Progressive web app</span>
-                </div>
-                <div class="card-content">
-                    <h4>Mon Budget</h4>
-                    <p>Pour aider à suivre nos dépenses familiales quotidiennes, j'ai créé une progressive web app (PWA).</p>
-                    <p>Avec Mon Budget, l'ensemble des catégories est entièrement personnalisable.</p>
+            </section>
+    
+            <section class="skills">
+                <h3 class="title">Compétences</h3>
+                <ul class="skills-list">
+                    <li>
+                        <div>
+                            <span>HTML</span>
+                            <div class="skills-list__tag">Langage</div>
+                    </div>
+                </li>
+                    <li>
+                        <div>
+                            <span>CSS</span>
+                            <div class="skills-list__tag">Langage</div>
+                    </div>
+                </li>
+                    <li><div>
+                            <span>JavaScript</span>
+                            <div class="skills-list__tag">Langage</div>
+                    </div>
+                </li>
+                    <li>
+                        <div>
+                            <span>TypeScript</span>
+                            <div class="skills-list__tag">Langage</div>
+                    </div>
+                </li>
+                    <li>
+                        <div>
+                            <span>Node.js</span>
+                            <div class="skills-list__tag">Runtime</div>
+                    </div>
+                </li>
+                    <li>
+                        <div>
+                            <span>Vue.js</span>
+                            <div class="skills-list__tag">Framework</div>
+                    </div>
+                </li>
+                    <li>
+                        <div>
+                            <span>PostgreSQL</span>
+                            <div class="skills-list__tag">Base de données</div>
+                    </div>
+                </li>
+                    <li>
+                        <div>
+                            <span>Git</span>
+                            <div class="skills-list__tag">Versioning</div>
+                    </div>
+                </li>
+                </ul>
+            </section>
+    
+            <section class="projects">
+                <h3 class="title">Réalisations</h3>
+                <div class="project-card">
+                    <div class="project-card__picture">
+                        <img src="/img/mon-budget.jpg" alt="screenshot Mon Budget">
+                    </div>
+                    <div class="project-card__content">
+                        <h4>Mon Budget</h4>
+                        <p>Pour aider à suivre nos dépenses familiales quotidiennes, j'ai créé une progressive web app (PWA).</p>
+                        <p>Avec Mon Budget, l'ensemble des catégories est entièrement personnalisable.</p>
+                    </div>
                     <a href="https://github.com/cedric-charlesia/mon-budget-app" target="_blank" class="button">Voir sur github</a>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="card-picture">
-                    <img src="/img/where-in-the-world.jpg" alt="screenshot Where in the world">
-                    <span>Application web</span>
-                </div>
-                <div class="card-content">
-                    <h4>Where in the world?</h4>
-                    <p>Passionné de voyages, j'ai fait ce challenge de frontend mentor en y ajoutant les fuseaux horaires et les plats nationaux.</p>
-                    <p>Les différents fuseaux horaires sont gérés avec le module day.js.</p>
+                <div class="project-card">
+                    <div class="project-card__picture">
+                        <img src="/img/where-in-the-world.jpg" alt="screenshot Where in the world">
+                    </div>
+                    <div class="project-card__content">
+                        <h4>Where in the world?</h4>
+                        <p>Passionné de voyages, j'ai fait ce <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca" target="_blank" class="link">challenge frontend mentor</a> en y ajoutant les fuseaux horaires et les plats nationaux.</p>
+                        <p>Les différents fuseaux horaires sont gérés avec le module day.js.</p>
+                    </div>
                     <a href="https://github.com/cedric-charlesia/Where-in-the-world" target="_blank" class="button">Voir sur github</a>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <footer class="footer">
+                <p>Cédric CHARLESIA &copy; 2022</p>
+            </footer>
+        </div>
     </div>
     
 </body>
