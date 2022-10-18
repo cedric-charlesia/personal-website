@@ -1,0 +1,8 @@
+:root {
+    --darkblue-color: #023e7d;
+    --lightblue-color: #5fa8d3;
+}
+body {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5;
+}
