@@ -1,7 +1,7 @@
 # Personal website
-As a less is more fan, I wanted something straight to the point and minimalist for my personal website.
+Minimalist but yet clean and modern personal website.
 
-Minimalist yes, but yet clean and modern. I built it using only plain html and css.
+As a less is more fan, I wanted something simple and straight to the point, so I built this projet using only plain HTML and CSS.
 
 The live website is available here: [https://cedriccharlesia.com/](https://cedriccharlesia.com)
 
