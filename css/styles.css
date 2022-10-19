@@ -216,4 +216,7 @@ hr {
     .skills-list li:nth-child(odd) {
         text-align: center;
     }
+    .project-card {
+        width: 100%;
+    }
 }
