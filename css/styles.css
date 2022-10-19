@@ -34,16 +34,22 @@ h1,h2,h3,p,a {
 .link:active {
     text-decoration: underline;
 }
-.button {
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.call-to-action__btn {
     display: inline-block;
     padding: 0.5em 1em;
-    margin: 0.625em;
+    margin: 0.5em;
     border: 2px solid var(--lightblue-color);
     border-radius: 0.3em;
     background-color: #fff;
     text-decoration: none;
 }
-.button:hover {
+.call-to-action__btn:hover {
     background-color: var(--lightblue-color);
     color: #fff;
     transition: all ease-in-out 0.3ms;
@@ -72,9 +78,6 @@ h1,h2,h3,p,a {
     box-sizing: border-box;
     text-align: center;
 }
-.content-bloc {
-    margin-top: 1em;
-}
 
 /* Profile picture */
 .profile-picture {
@@ -92,29 +95,26 @@ h1,h2,h3,p,a {
 }
 
 /* Introduction */
-.fullname {
+.introduction {
+    margin-top: 1.5em;
+}
+.introduction-fullname {
     letter-spacing: 0.025em;
     font-weight: 600;
     font-size: 1.7em;
 }
-.job {
+.introduction-job {
     font-weight: 400;
     color: #979797;
 }
-.introduction {
+.introduction-description {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
-.introduction p {
+.introduction-description p {
     line-height: 1.7;
-}
-.call-to-action-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
 }
 
 /* Skills section */
@@ -137,7 +137,7 @@ h1,h2,h3,p,a {
     padding: 0.62em 0.93em;
     border-radius: 0.18em;
     color: white;
-    margin: 0.3em;
+    margin: 0.5em 0.3em;
 }
 .skills-list li:nth-child(even) {
     text-align: left;
@@ -184,17 +184,17 @@ h1,h2,h3,p,a {
 
 /* Footer section */
 .footer {
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 /* Responsive */
 @media screen and (max-width: 620px){
-    .button {
-        margin: 5px 10px;
-    }
-    .call-to-action-btn {
+    .call-to-action {
         display: flex;
         flex-direction: column;
+    }
+    .call-to-action__btn {
+        margin: 5px 10px;
     }
     .skills-list {
         grid-template-columns: 1fr;
