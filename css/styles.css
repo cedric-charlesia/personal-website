@@ -17,6 +17,11 @@ body {
 h1,h2,h3,p,a {
     color: rgba(0,0,0,0.8);
 }
+hr {
+    margin: 0.5em auto;
+    border:0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
 .title {
     color: var(--darkblue-color);
     font-size: 1.4em;
@@ -118,18 +123,24 @@ h1,h2,h3,p,a {
 }
 
 /* Skills section */
-.skills {
-    width: 85%;
-    margin: auto;
-}
 .skills-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 .skills-list li {
+    width: 50%;
+}
+.skills-list li:nth-child(even) {
+    text-align: left;
+}
+.skills-list li:nth-child(odd) {
+    text-align: right;
+}
+.skills-list__box {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -139,21 +150,13 @@ h1,h2,h3,p,a {
     color: white;
     margin: 0.5em 0.3em;
 }
-.skills-list li:nth-child(even) {
-    text-align: left;
-}
-.skills-list li:nth-child(odd) {
-    text-align: right;
-}
 .skills-list__tag {
     display: inline-block;
-    height: 20px;
     padding: 0px 5px;
     background: var(--darkblue-color);
     box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.1);
     vertical-align: middle;
     border-radius: 0.18em;
-    margin-left: 0.625em;
     text-align: center;
     color: white;
     font-size: 0.75rem;
@@ -162,7 +165,7 @@ h1,h2,h3,p,a {
 
 /* Projects section */
 .project-card {
-    width: 85%;
+    width: 75%;
     margin: 1.5em auto;
     display: flex;
     flex-direction: column;
@@ -178,8 +181,18 @@ h1,h2,h3,p,a {
     flex-direction: column;
     gap: 0.5em;
 }
+.project-card__content h4 {
+    font-size: 1rem;
+    margin-bottom: 0.3em;
+}
+.project-card__content p {
+    text-align: justify;
+    max-width: 40ch;
+}
 .project-card a {
     border-radius: 1.875em;
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 /* Footer section */
